@@ -98,10 +98,3 @@ Le cours est divisé en deux grands chapitres :
 | Format | Markdown (.md) |
 | Objectif | Cours pédagogique et démonstratif |
 
----
-
-## 📖 Comment utiliser ce dépôt
-
-1. **Cloner le dépôt**
-   ```bash
-   git clone https://github.com/<ton-utilisateur>/<nom-du-repo>.git
