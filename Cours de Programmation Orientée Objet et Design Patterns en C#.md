@@ -146,8 +146,8 @@ Mettre en œuvre plusieurs patterns étudiés dans un **mini-projet Unity comple
 - Freeman, Eric & Robson, Elisabeth — *Head First Design Patterns*, O’Reilly, 2021.
 - Martin, Robert C. — *Clean Architecture*, Prentice Hall, 2017.
 - [Refactoring Guru — Catalogue complet des Design Patterns](https://refactoring.guru/fr/design-patterns/catalog)
-- [Microsoft Learn — Design Patterns en .NET](https://learn.microsoft.com/en-us/dotnet/architecture/grpc-for-wcf-developers/design-patterns)
-- [Unity Learn — Programming Patterns](https://learn.unity.com/tutorial/programming-patterns)
+- [Robert Nystrom — Game Programming Patterns (gratuit en ligne)](https://gameprogrammingpatterns.com/)
+- [Unity — e-book « Level up your code with design patterns and SOLID »](https://unity.com/resources/design-patterns-solid-ebook)
 
 ---
 

@@ -113,5 +113,5 @@ Chaque pattern sera étudié avec :
 
 * Gamma, Helm, Johnson, Vlissides — *Design Patterns: Elements of Reusable Object-Oriented Software*, Addison-Wesley, 1994.
 * [Refactoring Guru — Catalogue des Design Patterns](https://refactoring.guru/fr/design-patterns/catalog)
-* [Microsoft Learn — Design Patterns in .NET](https://learn.microsoft.com/en-us/dotnet/architecture/grpc-for-wcf-developers/design-patterns)
-* [Unity Learn — Programming Patterns](https://learn.unity.com/tutorial/programming-patterns)
+* [Robert Nystrom — Game Programming Patterns (gratuit en ligne)](https://gameprogrammingpatterns.com/)
+* [Unity — e-book « Level up your code with design patterns and SOLID »](https://unity.com/resources/design-patterns-solid-ebook)

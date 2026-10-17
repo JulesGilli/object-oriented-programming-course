@@ -73,7 +73,7 @@ Avant d’aborder le chapitre suivant, il est recommandé de :
 
 ## Références recommandées
 
-* [Microsoft Learn — C# Fundamentals](https://learn.microsoft.com/fr-fr/dotnet/csharp/fundamentals/)
+* [Microsoft Learn — Visite guidée du langage C#](https://learn.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/)
 * [Unity Learn — Junior Programmer Pathway](https://learn.unity.com/pathway/junior-programmer)
 * Booch, Grady. *Object-Oriented Analysis and Design with Applications*, Addison-Wesley, 2007.
 * Martin, Robert C. *Clean Code: A Handbook of Agile Software Craftsmanship*, Prentice Hall, 2008.

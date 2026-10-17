@@ -112,6 +112,6 @@ La maîtrise des Design Patterns ouvre la voie vers des concepts architecturaux 
 * Freeman, Eric & Robson, Elisabeth — *Head First Design Patterns*, O’Reilly, 2021.
 * Martin, Robert C. — *Clean Architecture: A Craftsman’s Guide to Software Structure and Design*, Prentice Hall, 2017.
 * [Refactoring Guru — Catalogue des Design Patterns](https://refactoring.guru/fr/design-patterns/catalog)
-* [Microsoft Learn — .NET Design Patterns](https://learn.microsoft.com/en-us/dotnet/architecture/grpc-for-wcf-developers/design-patterns)
-* [Unity Learn — Programming Patterns](https://learn.unity.com/tutorial/programming-patterns)
+* [Robert Nystrom — Game Programming Patterns (gratuit en ligne)](https://gameprogrammingpatterns.com/)
+* [Unity — e-book « Level up your code with design patterns and SOLID »](https://unity.com/resources/design-patterns-solid-ebook)
 

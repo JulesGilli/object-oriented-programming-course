@@ -104,8 +104,8 @@ Ces principes sont omniprésents en C# et essentiels à la conception d’archit
 
 ### Références utiles
 
-* [Microsoft Learn — Fondamentaux C#](https://learn.microsoft.com/fr-fr/dotnet/csharp/fundamentals/)
+* [Microsoft Learn — Visite guidée du langage C#](https://learn.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/)
 * [Unity Learn — Scripting Fundamentals](https://learn.unity.com/pathway/junior-programmer)
-* [Refactoring Guru — Principes de la POO](https://refactoring.guru/fr/design-patterns/oop-principles)
+* [Microsoft Learn — Programmation orientée objet (C#)](https://learn.microsoft.com/fr-fr/dotnet/csharp/fundamentals/tutorials/oop)
 * Grady Booch, *Object-Oriented Analysis and Design with Applications*, Addison-Wesley, 2007.
 
