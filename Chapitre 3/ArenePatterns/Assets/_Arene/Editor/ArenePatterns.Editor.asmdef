@@ -1,0 +1,18 @@
+{
+    "name": "ArenePatterns.Editor",
+    "rootNamespace": "ArenePatterns.Editeur",
+    "references": [
+        "ArenePatterns"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
