@@ -220,7 +220,7 @@ Il faut aussi un dossier `code/` qui contienne une **solution .NET** (un projet 
 - [x] Nouveaux patterns : Template Method, Composite, Prototype, Object Pool (fiches 11 à 14 du chapitre 2).
 - [x] Patterns suivants : Flyweight, Mediator, Iterator (fiches 15 à 17 du chapitre 2).
 - [x] **Exercices avec sortie attendue** dans chaque fiche, adaptés de la piscine Java : 30 exercices, solutions dans des blocs repliables. Le code publié est extrait automatiquement des fiches, compilé (.NET 8) et sa sortie comparée à la sortie annoncée.
-- [ ] **Projets de fin de chapitre** : Space Arena (ch. 1) et Boulangerie (ch. 2).
+- [x] **Projets de fin de chapitre** : l’arène spatiale (ch. 1) et la boulangerie (ch. 2), découpés en étapes testées, avec solution complète.
 - [ ] Solution .NET + tests xUnit pour tout le code.
 
 ### P3 : chapitre 3

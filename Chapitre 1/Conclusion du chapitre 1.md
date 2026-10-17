@@ -85,4 +85,4 @@ Avant d’aborder le chapitre suivant, il est recommandé de :
 
 ---
 
-[← Précédent : 16. Délégués, événements et lambdas](<Partie IV — Les outils du langage/16. Délégués, événements et lambdas.md>) · [Sommaire](<../README.md>) · [Suivant : Introduction du chapitre 2 →](<../Chapitre 2/Chapitre 2 — Les Design Patterns.md>)
+[← Précédent : Projet — L’arène spatiale](<Projet — Arène spatiale.md>) · [Sommaire](<../README.md>) · [Suivant : Introduction du chapitre 2 →](<../Chapitre 2/Chapitre 2 — Les Design Patterns.md>)

@@ -119,4 +119,4 @@ La maîtrise des Design Patterns ouvre la voie vers des concepts architecturaux 
 
 ---
 
-[← Précédent : 17. Iterator](<Partie IV — Patterns complémentaires/17. Iterator.md>) · [Sommaire](<../README.md>)
+[← Précédent : Projet — La boulangerie](<Projet — Boulangerie.md>) · [Sommaire](<../README.md>)

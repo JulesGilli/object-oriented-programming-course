@@ -15,6 +15,7 @@ Ce dépôt propose une **ressource complète et pédagogique** pour comprendre :
 ## Comment suivre ce cours
 
 - **Parcours conseillé :** lire les fiches dans l’ordre. Chaque fiche se termine par des liens *Précédent · Sommaire · Suivant*.
+- **Projets :** chaque chapitre se termine par un projet guidé, découpé en étapes avec un test par étape et une solution complète.
 - **Format d’une fiche :** objectifs, explication, diagramme UML, exemple C#, application dans Unity, pièges courants, confusions fréquentes, exercice avec sortie attendue et solution.
 - **Prérequis :** connaître les bases de la programmation (variables, conditions, boucles, fonctions). Aucune connaissance préalable de la POO n’est nécessaire.
 - **Pour pratiquer :** tous les exemples C# hors Unity se testent dans un projet console (`dotnet new console`).
@@ -55,6 +56,8 @@ Définition de la POO, contexte historique, problèmes résolus et comparaison a
 15. [Génériques](<Chapitre 1/Partie IV — Les outils du langage/15. Génériques.md>) — classes et méthodes génériques, contraintes `where`, covariance
 16. [Délégués, événements et lambdas](<Chapitre 1/Partie IV — Les outils du langage/16. Délégués, événements et lambdas.md>) — `Action`, `Func`, captures, `event`
 
+🛠️ [Projet — L’arène spatiale](<Chapitre 1/Projet — Arène spatiale.md>) — un combat au tour par tour qui mobilise tout le chapitre
+
 [Conclusion du chapitre 1](<Chapitre 1/Conclusion du chapitre 1.md>) — récapitulatif et importance de la POO dans Unity
 
 ### [Chapitre 2 — Les Design Patterns](<Chapitre 2/Chapitre 2 — Les Design Patterns.md>)
@@ -93,6 +96,8 @@ Définition, historique du *Gang of Four* et classification des patterns.
 15. [Flyweight](<Chapitre 2/Partie IV — Patterns complémentaires/15. Flyweight.md>) — partager les données communes à des milliers d’objets
 16. [Mediator](<Chapitre 2/Partie IV — Patterns complémentaires/16. Mediator.md>) — faire communiquer des objets sans qu’ils se connaissent
 17. [Iterator](<Chapitre 2/Partie IV — Patterns complémentaires/17. Iterator.md>) — parcourir une collection, `yield return` et coroutines
+
+🛠️ [Projet — La boulangerie](<Chapitre 2/Projet — Boulangerie.md>) — un logiciel de caisse qui combine six patterns
 
 [Conclusion du chapitre 2](<Chapitre 2/Conclusion du chapitre 2.md>) — synthèse des familles de patterns et application dans Unity
 
