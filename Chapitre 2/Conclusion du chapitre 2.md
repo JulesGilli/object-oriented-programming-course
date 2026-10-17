@@ -17,8 +17,8 @@ Les 23 patrons classiques définis par le *Gang of Four (GoF)* se regroupent sel
 | Famille             | Rôle principal                                                         | Exemples étudiés                   |
 | ------------------- | ---------------------------------------------------------------------- | ---------------------------------- |
 | **Créationnels**    | Gérer la manière dont les objets sont créés, instanciés et configurés. | Singleton, Factory Method, Builder, Prototype, Object Pool\* |
-| **Structurels**     | Définir comment les classes et objets s’organisent et collaborent.     | Adapter, Decorator, Facade, Composite |
-| **Comportementaux** | Décrire comment les objets interagissent et communiquent.              | Observer, Strategy, State, Command, Template Method |
+| **Structurels**     | Définir comment les classes et objets s’organisent et collaborent.     | Adapter, Decorator, Facade, Composite, Flyweight |
+| **Comportementaux** | Décrire comment les objets interagissent et communiquent.              | Observer, Strategy, State, Command, Template Method, Mediator, Iterator |
 
 \* *Object Pool ne fait pas partie des 23 patterns du GoF : c’est un pattern d’optimisation, incontournable dans le jeu vidéo.*
 
@@ -119,4 +119,4 @@ La maîtrise des Design Patterns ouvre la voie vers des concepts architecturaux 
 
 ---
 
-[← Précédent : 14. Object Pool](<Partie IV — Patterns complémentaires/14. Object Pool.md>) · [Sommaire](<../README.md>)
+[← Précédent : 17. Iterator](<Partie IV — Patterns complémentaires/17. Iterator.md>) · [Sommaire](<../README.md>)

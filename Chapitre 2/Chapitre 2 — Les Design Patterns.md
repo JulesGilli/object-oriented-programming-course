@@ -114,6 +114,9 @@ Nous allons explorer les Design Patterns selon leur famille :
 12. Composite (structurel)
 13. Prototype (créationnel)
 14. Object Pool (pattern d’optimisation, hors GoF)
+15. Flyweight (structurel)
+16. Mediator (comportemental)
+17. Iterator (comportemental)
 
 Chaque pattern sera étudié avec :
 

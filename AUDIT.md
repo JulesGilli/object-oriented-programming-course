@@ -218,7 +218,7 @@ Il faut aussi un dossier `code/` qui contienne une **solution .NET** (un projet 
 ### P2 : étoffer (≈ 1-2 semaines)
 - [x] Nouvelles fiches au chapitre 1 : types valeur/référence, static & enums, exceptions, génériques, délégués/événements/lambdas (fiches 12 à 16). Le comparatif interface / classe abstraite a été ajouté à la fiche 5.
 - [x] Nouveaux patterns : Template Method, Composite, Prototype, Object Pool (fiches 11 à 14 du chapitre 2).
-- [ ] Patterns suivants : Flyweight, Mediator, Iterator.
+- [x] Patterns suivants : Flyweight, Mediator, Iterator (fiches 15 à 17 du chapitre 2).
 - [x] **Exercices avec sortie attendue** dans chaque fiche, adaptés de la piscine Java : 30 exercices, solutions dans des blocs repliables. Le code publié est extrait automatiquement des fiches, compilé (.NET 8) et sa sortie comparée à la sortie annoncée.
 - [ ] **Projets de fin de chapitre** : Space Arena (ch. 1) et Boulangerie (ch. 2).
 - [ ] Solution .NET + tests xUnit pour tout le code.

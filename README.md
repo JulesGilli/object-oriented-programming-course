@@ -90,6 +90,9 @@ Définition, historique du *Gang of Four* et classification des patterns.
 12. [Composite](<Chapitre 2/Partie IV — Patterns complémentaires/12. Composite.md>) — traiter un élément et un groupe de la même façon
 13. [Prototype](<Chapitre 2/Partie IV — Patterns complémentaires/13. Prototype.md>) — créer des objets en clonant un modèle (`Instantiate`)
 14. [Object Pool](<Chapitre 2/Partie IV — Patterns complémentaires/14. Object Pool.md>) — recycler des objets coûteux (projectiles, particules)
+15. [Flyweight](<Chapitre 2/Partie IV — Patterns complémentaires/15. Flyweight.md>) — partager les données communes à des milliers d’objets
+16. [Mediator](<Chapitre 2/Partie IV — Patterns complémentaires/16. Mediator.md>) — faire communiquer des objets sans qu’ils se connaissent
+17. [Iterator](<Chapitre 2/Partie IV — Patterns complémentaires/17. Iterator.md>) — parcourir une collection, `yield return` et coroutines
 
 [Conclusion du chapitre 2](<Chapitre 2/Conclusion du chapitre 2.md>) — synthèse des familles de patterns et application dans Unity
 
