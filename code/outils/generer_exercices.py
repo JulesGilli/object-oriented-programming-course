@@ -88,7 +88,9 @@ def main():
         ancien.unlink()
 
     tests = []
-    fiches = sorted(p for p in RACINE.glob("Chapitre */**/*.md") if "Partie" in str(p.parent.name) or p.name.startswith("Projet"))
+    fiches = sorted(p for p in RACINE.glob("Chapitre */**/*.md")
+                    if "ArenePatterns" not in p.parts            # projet Unity du chapitre 3 (et son cache Library/)
+                    and ("Partie" in str(p.parent.name) or p.name.startswith("Projet")))
     for fiche in fiches:
         chapitre = re.search(r"Chapitre (\d)", str(fiche.relative_to(RACINE))).group(1)
         resultat = extraire(fiche)

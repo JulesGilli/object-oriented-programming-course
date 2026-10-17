@@ -224,7 +224,7 @@ Il faut aussi un dossier `code/` qui contienne une **solution .NET** (un projet 
 - [x] Solution .NET + tests xUnit : `code/CoursPOO.sln`, 34 scénarios de fiches générés automatiquement à partir du texte et 19 tests de règles métier écrits à la main (53 tests au vert). Les exemples Unity restent hors de portée d’un test .NET.
 
 ### P3 : chapitre 3
-- [ ] Mini-projet Unity fil rouge, par exemple un petit jeu d'arène qui combine State (IA), Observer (HUD), Command (input + replay), Object Pool (projectiles), Strategy en ScriptableObject (armes) et Factory (spawn).
+- [x] Mini-projet Unity fil rouge : *l’arène des patterns* (`Chapitre 3/ArenePatterns`, Unity 6.3 LTS), qui combine Command, Iterator, Strategy, Object Pool, Flyweight, State, Factory et Observer sans aucun Singleton ; 6 fiches dont le code est injecté depuis le projet, 4 défis dont les solutions ont été compilées dans Unity, 7 tests PlayMode au vert.
 
 ---
 

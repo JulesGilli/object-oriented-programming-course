@@ -119,4 +119,4 @@ La maîtrise des Design Patterns ouvre la voie vers des concepts architecturaux 
 
 ---
 
-[← Précédent : Projet — La boulangerie](<Projet — Boulangerie.md>) · [Sommaire](<../README.md>)
+[← Précédent : Projet — La boulangerie](<Projet — Boulangerie.md>) · [Sommaire](<../README.md>) · [Suivant : Chapitre 3 — Mise en pratique →](<../Chapitre 3/Chapitre 3 — Mise en pratique.md>)

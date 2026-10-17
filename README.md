@@ -101,9 +101,16 @@ Définition, historique du *Gang of Four* et classification des patterns.
 
 [Conclusion du chapitre 2](<Chapitre 2/Conclusion du chapitre 2.md>) — synthèse des familles de patterns et application dans Unity
 
-### Chapitre 3 — Mise en pratique *(à venir)*
+### [Chapitre 3 — Mise en pratique : l’arène des patterns](<Chapitre 3/Chapitre 3 — Mise en pratique.md>)
 
-Un mini-projet Unity complet qui combine plusieurs patterns étudiés : State pour l’IA, Observer pour le HUD, Command pour les entrées, Object Pool pour les projectiles, Strategy pour les armes, Factory pour l’apparition des ennemis.
+Un petit jeu Unity complet ([projet Unity 6.3](<Chapitre 3/ArenePatterns/>)), qui combine huit patterns sans aucun Singleton.
+
+1. [Le joueur et ses commandes](<Chapitre 3/1. Le joueur et ses commandes.md>) — Command, Iterator, Input System
+2. [Les armes](<Chapitre 3/2. Les armes.md>) — Strategy en ScriptableObject, Object Pool
+3. [Les ennemis](<Chapitre 3/3. Les ennemis.md>) — Flyweight, State, Factory
+4. [La partie et le HUD](<Chapitre 3/4. La partie et le HUD.md>) — Iterator (coroutines), Observer, injection de dépendances
+
+[Conclusion du chapitre 3](<Chapitre 3/Conclusion du chapitre 3.md>) — tests PlayMode, bilan et mot de la fin
 
 ---
 
