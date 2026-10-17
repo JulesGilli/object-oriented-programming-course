@@ -67,7 +67,7 @@ Les 23 patrons décrits par le GoF sont généralement répartis en **trois gran
 En **C#**, les patterns permettent de concevoir des architectures logicielles propres, indépendantes et extensibles.
 Dans **Unity**, leur utilité est encore plus évidente :
 
-* Le **Singleton** pour les gestionnaires globaux (GameManager, AudioManager, etc.).
+* Le **Singleton** pour les gestionnaires globaux (GestionnaireJeu, GestionnaireAudio, etc.).
 * Le **Factory Method** ou le **Builder** pour la génération d’objets ou d’ennemis.
 * Le **Observer** pour la gestion des événements (UI, score, etc.).
 * Le **Strategy** ou le **State** pour les comportements d’IA ou de gameplay.

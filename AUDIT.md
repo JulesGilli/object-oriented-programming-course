@@ -208,7 +208,7 @@ Il faut aussi un dossier `code/` qui contienne une **solution .NET** (un projet 
 - [x] Retirer les BOM, fusionner les deux sommaires et aligner le README sur le contenu réel.
 
 ### P1 : rendre le cours « clean » (≈ 2-3 jours)
-- [ ] Adopter une convention unique de nommage (code en anglais, texte en français) et des noms de fichiers sans espaces ni accents.
+- [x] Adopter une convention unique de nommage. *Décision : tout le code en français, exemples Unity compris ; seules l’API Unity/.NET, les bibliothèques tierces adaptées par le pattern Adapter et les noms de patterns en suffixe (`QueteBuilder`, `JeuFacade`…) restent en anglais. Les noms de fichiers actuels sont conservés.*
 - [x] Ajouter la navigation précédent / suivant / sommaire.
 - [x] **Ajouter un diagramme Mermaid à chaque fiche** (classes, séquence ou états).
 - [x] Ajouter une fiche « Lire un diagramme UML » avant le chapitre 2.

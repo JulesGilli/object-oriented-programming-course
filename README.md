@@ -67,7 +67,7 @@ Définition, historique du *Gang of Four* et classification des patterns.
 
 **Partie I — Patterns créationnels**
 
-1. [Singleton](<Chapitre 2/Partie I — Patterns Créationnels/1. Singleton.md>) — une instance unique (GameManager, AudioManager), et ses risques
+1. [Singleton](<Chapitre 2/Partie I — Patterns Créationnels/1. Singleton.md>) — une instance unique (GestionnaireJeu, GestionnaireAudio), et ses risques
 2. [Factory Method](<Chapitre 2/Partie I — Patterns Créationnels/2. Factory Method.md>) — déléguer la création d’objets aux sous-classes
 3. [Builder](<Chapitre 2/Partie I — Patterns Créationnels/3. Builder.md>) — construire des objets complexes étape par étape
 

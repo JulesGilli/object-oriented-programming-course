@@ -58,7 +58,7 @@ Plutôt que de raisonner en termes de fonctions isolées, elle invite à raisonn
 | Avantage        | Description                                                | Exemple                                                                                        |
 | --------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | Réutilisabilité | Une même classe peut être utilisée dans plusieurs projets. | Une classe `Joueur` réutilisée dans différents jeux.                                           |
-| Modularité      | Les objets sont isolés les uns des autres.                 | Un module `AudioManager` indépendant du module `UI`.                                           |
+| Modularité      | Les objets sont isolés les uns des autres.                 | Un module `GestionnaireAudio` indépendant du module `UI`.                                           |
 | Extensibilité   | On peut enrichir le code sans le réécrire.                 | Une classe `EnnemiVolant` dérivée de `Ennemi`.                                                 |
 | Maintenabilité  | Le code est plus clair et moins sujet aux erreurs.         | Correction d’un bug dans une seule classe sans impacter le reste du projet.                    |
 | Réalisme        | Le code reflète la structure du monde réel.                | Un objet `Voiture` avec des attributs (vitesse, couleur) et des méthodes (accélérer, freiner). |
