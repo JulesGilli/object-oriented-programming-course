@@ -23,7 +23,7 @@
 ## 2. Problèmes transverses
 
 ### 2.1 Forme et organisation
-- **Deux sommaires redondants** : [README.md](README.md) et [Cours de Programmation Orientée Objet et Design Patterns en C#.md](<Cours de Programmation Orientée Objet et Design Patterns en C#.md>) disent la même chose. Il faut en garder un seul.
+- **Deux sommaires redondants** : [README.md](README.md) et [Cours de Programmation Orientée Objet et Design Patterns en C#.md](<Cours de Programmation Orientée Objet et Design Patterns en C%23.md>) disent la même chose. Il faut en garder un seul.
 - **Aucune navigation** : il n'y a pas de liens entre les fiches (précédent / suivant / sommaire), et le README ne pointe vers aucun fichier.
 - **Noms de fichiers peu pratiques** : ils contiennent des espaces, des tirets cadratins (—) et des accents, ce qui rend les URL GitHub illisibles. De plus, le tri alphabétique place `10. Couplage` avant `8. Composition`. Il faudrait passer au format `01-classe-et-objet.md`.
 - **BOM UTF-8 (`﻿`) au début de 23 fichiers sur 26**. C'est invisible dans l'éditeur, mais ça peut casser le rendu du premier titre et certains outils.
@@ -213,12 +213,13 @@ Il faut aussi un dossier `code/` qui contienne une **solution .NET** (un projet 
 - [x] **Ajouter un diagramme Mermaid à chaque fiche** (classes, séquence ou états).
 - [x] Ajouter une fiche « Lire un diagramme UML » avant le chapitre 2.
 - [ ] Appliquer le nouveau gabarit : sections *Pièges* et *À ne pas confondre*.
-- [ ] Écrire la fiche **SOLID** (promise).
+- [x] Écrire la fiche **SOLID** (promise) : fiche 11 du chapitre 1.
 
 ### P2 : étoffer (≈ 1-2 semaines)
-- [ ] Nouvelles fiches au chapitre 1 : types valeur/référence, static & enums, exceptions, génériques, délégués/événements/lambdas, interface vs classe abstraite.
-- [ ] Nouveaux patterns : Object Pool, Composite, Template Method, Prototype (puis Flyweight, Mediator, Iterator).
-- [ ] **Exercices avec sortie attendue** dans chaque fiche, adaptés de la piscine Java, avec des solutions séparées.
+- [x] Nouvelles fiches au chapitre 1 : types valeur/référence, static & enums, exceptions, génériques, délégués/événements/lambdas (fiches 12 à 16). Le comparatif interface / classe abstraite a été ajouté à la fiche 5.
+- [x] Nouveaux patterns : Template Method, Composite, Prototype, Object Pool (fiches 11 à 14 du chapitre 2).
+- [ ] Patterns suivants : Flyweight, Mediator, Iterator.
+- [ ] **Exercices avec sortie attendue** dans chaque fiche, adaptés de la piscine Java, avec des solutions séparées. *Fait pour les 10 nouvelles fiches (solutions dans des blocs repliables, code compilé et sorties vérifiées) ; reste à faire pour les 20 fiches d’origine.*
 - [ ] **Projets de fin de chapitre** : Space Arena (ch. 1) et Boulangerie (ch. 2).
 - [ ] Solution .NET + tests xUnit pour tout le code.
 

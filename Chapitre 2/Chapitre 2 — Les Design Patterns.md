@@ -72,6 +72,7 @@ Dans **Unity**, leur utilité est encore plus évidente :
 * Le **Observer** pour la gestion des événements (UI, score, etc.).
 * Le **Strategy** ou le **State** pour les comportements d’IA ou de gameplay.
 * Le **Command** pour la gestion d’entrées ou de systèmes d’actions.
+* L’**Object Pool** pour recycler projectiles et particules sans saccades.
 
 Ces patrons deviennent ainsi des **outils concrets** pour structurer vos jeux et systèmes Unity avec efficacité et clarté.
 
@@ -106,6 +107,13 @@ Nous allons explorer les Design Patterns selon leur famille :
 8. Strategy
 9. State
 10. Command
+
+### Partie IV — Patterns complémentaires
+
+11. Template Method (comportemental)
+12. Composite (structurel)
+13. Prototype (créationnel)
+14. Object Pool (pattern d’optimisation, hors GoF)
 
 Chaque pattern sera étudié avec :
 

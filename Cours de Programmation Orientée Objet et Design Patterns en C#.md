@@ -35,8 +35,16 @@ Comprendre les fondements de la POO, ses concepts centraux, ses avantages et son
     - **8. Composition vs héritage** : préférence pour la composition
     - **9. Visibilité et portée** : `public`, `private`, `protected`, `internal`
     - **10. Couplage et Cohésion** : SRP, principes de bonne architecture
+    - **11. Principes SOLID** : les cinq principes, du carré-rectangle à l’injection de dépendances
 
-5. **Conclusion du Chapitre 1**
+5. **Les outils du langage**
+    - **12. Types valeur et types référence** : `class`, `struct`, `record`, copies et égalité
+    - **13. Membres statiques, énumérations et namespaces**
+    - **14. Exceptions** : `throw`, `try`/`catch`, exceptions personnalisées, méthodes `TryXxx`
+    - **15. Génériques** : classes et méthodes génériques, contraintes `where`, covariance
+    - **16. Délégués, événements et lambdas** : `Action`, `Func`, captures, `event`
+
+6. **Conclusion du Chapitre 1**
     - Récapitulatif des 4 piliers
     - Importance de la POO pour Unity (GameObject, MonoBehaviour, composants)
     - Transition vers les Design Patterns
@@ -117,6 +125,29 @@ Les patterns sont classés selon leur rôle dans l’architecture : créationnel
     - Encapsulation d’actions comme objets
     - Exemple : système d’input, undo/redo, gameplay séquencé
     - Découplage entre demandeur et exécuteur
+
+---
+
+#### Partie IV — Patterns complémentaires
+11. **Template Method**
+    - Squelette d’algorithme fixé par la classe de base
+    - Exemple : tour de jeu des ennemis, arme de base dans Unity
+    - Comparaison avec Strategy et Factory Method
+
+12. **Composite**
+    - Arborescence d’objets traitée de façon uniforme
+    - Exemple : inventaire de sacs imbriqués, arbre de comportement
+    - Lien avec la hiérarchie de `Transform`
+
+13. **Prototype**
+    - Création d’objets par clonage d’un modèle
+    - Copie superficielle vs copie profonde
+    - `Instantiate(prefab)` comme Prototype
+
+14. **Object Pool**
+    - Recyclage d’objets coûteux à créer
+    - Exemple : projectiles avec `UnityEngine.Pool.ObjectPool<T>`
+    - Pièges : réinitialisation, objet rendu deux fois
 
 ---
 
