@@ -1,0 +1,183 @@
+/* ---------- Couleurs et dimensions communes ---------- */
+:root {
+    --fond-panneau: rgba(12, 14, 22, 0.72);
+    --bordure-panneau: rgba(255, 255, 255, 0.10);
+    --texte-principal: rgb(240, 242, 248);
+    --texte-secondaire: rgb(150, 160, 182);
+    --vie: rgb(78, 205, 130);
+    --vie-critique: rgb(240, 82, 82);
+    --accent: rgb(255, 205, 90);
+}
+
+.hud {
+    flex-grow: 1;
+}
+
+/* ---------- Panneaux du haut ---------- */
+.panneau {
+    position: absolute;
+    top: 28px;
+    padding: 14px 18px;
+    background-color: var(--fond-panneau);
+    border-width: 1px;
+    border-color: var(--bordure-panneau);
+    border-radius: 12px;
+}
+
+.panneau--gauche {
+    left: 28px;
+    width: 360px;
+}
+
+.panneau--droite {
+    right: 28px;
+    min-width: 180px;
+    align-items: flex-end;
+}
+
+.intitule {
+    margin: 0 0 6px 0;
+    padding: 0;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: var(--texte-secondaire);
+    -unity-font-style: bold;
+}
+
+/* ---------- Barre de vie ---------- */
+.barre {
+    height: 26px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.barre__remplissage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--vie);
+    border-radius: 7px;
+    transition-property: width, background-color;
+    transition-duration: 0.25s, 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.barre__remplissage--critique {
+    background-color: var(--vie-critique);
+}
+
+.barre__texte {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    -unity-text-align: middle-center;
+    font-size: 15px;
+    color: var(--texte-principal);
+    -unity-font-style: bold;
+    -unity-text-outline-width: 0.5px;
+    -unity-text-outline-color: rgba(0, 0, 0, 0.6);
+}
+
+.arme {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 16px;
+    color: var(--accent);
+    -unity-font-style: bold;
+}
+
+/* ---------- Score et vague ---------- */
+.score {
+    margin: 0;
+    padding: 0;
+    font-size: 44px;
+    color: var(--texte-principal);
+    -unity-font-style: bold;
+}
+
+.vague {
+    margin: 2px 0 0 0;
+    padding: 0;
+    font-size: 16px;
+    color: var(--texte-secondaire);
+}
+
+/* ---------- Annonce de vague : apparaît en grandissant, puis s’efface ---------- */
+.annonce {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 34%;
+    -unity-text-align: middle-center;
+    font-size: 72px;
+    color: var(--texte-principal);
+    -unity-font-style: bold;
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    scale: 0.8 0.8;
+    transition-property: opacity, scale;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-out-back;
+}
+
+.annonce--visible {
+    opacity: 1;
+    scale: 1 1;
+}
+
+/* ---------- Aide en bas d’écran ---------- */
+.aide {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    -unity-text-align: middle-center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+/* ---------- Écran de fin ---------- */
+.ecran-fin {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(6, 7, 12, 0.78);
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+.ecran-fin--visible {
+    opacity: 1;
+}
+
+.ecran-fin__titre {
+    font-size: 64px;
+    color: var(--vie-critique);
+    -unity-font-style: bold;
+    letter-spacing: 4px;
+}
+
+.ecran-fin__score {
+    margin-top: 8px;
+    font-size: 36px;
+    color: var(--texte-principal);
+}
+
+.ecran-fin__aide {
+    margin-top: 28px;
+    font-size: 18px;
+    color: var(--texte-secondaire);
+}
