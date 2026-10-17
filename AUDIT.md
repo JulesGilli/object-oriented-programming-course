@@ -221,7 +221,7 @@ Il faut aussi un dossier `code/` qui contienne une **solution .NET** (un projet 
 - [x] Patterns suivants : Flyweight, Mediator, Iterator (fiches 15 à 17 du chapitre 2).
 - [x] **Exercices avec sortie attendue** dans chaque fiche, adaptés de la piscine Java : 30 exercices, solutions dans des blocs repliables. Le code publié est extrait automatiquement des fiches, compilé (.NET 8) et sa sortie comparée à la sortie annoncée.
 - [x] **Projets de fin de chapitre** : l’arène spatiale (ch. 1) et la boulangerie (ch. 2), découpés en étapes testées, avec solution complète.
-- [ ] Solution .NET + tests xUnit pour tout le code.
+- [x] Solution .NET + tests xUnit : `code/CoursPOO.sln`, 34 scénarios de fiches générés automatiquement à partir du texte et 19 tests de règles métier écrits à la main (53 tests au vert). Les exemples Unity restent hors de portée d’un test .NET.
 
 ### P3 : chapitre 3
 - [ ] Mini-projet Unity fil rouge, par exemple un petit jeu d'arène qui combine State (IA), Observer (HUD), Command (input + replay), Object Pool (projectiles), Strategy en ScriptableObject (armes) et Factory (spawn).

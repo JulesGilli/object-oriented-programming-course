@@ -18,7 +18,7 @@ Ce dépôt propose une **ressource complète et pédagogique** pour comprendre :
 - **Projets :** chaque chapitre se termine par un projet guidé, découpé en étapes avec un test par étape et une solution complète.
 - **Format d’une fiche :** objectifs, explication, diagramme UML, exemple C#, application dans Unity, pièges courants, confusions fréquentes, exercice avec sortie attendue et solution.
 - **Prérequis :** connaître les bases de la programmation (variables, conditions, boucles, fonctions). Aucune connaissance préalable de la POO n’est nécessaire.
-- **Pour pratiquer :** tous les exemples C# hors Unity se testent dans un projet console (`dotnet new console`).
+- **Pour pratiquer :** tous les exemples C# hors Unity se testent dans un projet console (`dotnet new console`). Le dossier [`code/`](code/README.md) contient une version compilable de tous les exercices et projets, avec des tests automatiques (`dotnet test code/CoursPOO.sln`).
 
 ---
 

@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Code des exercices et des projets, généré à partir des fiches par code/outils/generer_exercices.py -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Le code du cours n’utilise pas les annotations de nullabilité -->
+    <Nullable>disable</Nullable>
+    <RootNamespace>CoursPOO.Exercices</RootNamespace>
+  </PropertyGroup>
+
+</Project>
