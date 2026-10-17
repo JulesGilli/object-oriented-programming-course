@@ -212,14 +212,14 @@ Il faut aussi un dossier `code/` qui contienne une **solution .NET** (un projet 
 - [x] Ajouter la navigation précédent / suivant / sommaire.
 - [x] **Ajouter un diagramme Mermaid à chaque fiche** (classes, séquence ou états).
 - [x] Ajouter une fiche « Lire un diagramme UML » avant le chapitre 2.
-- [ ] Appliquer le nouveau gabarit : sections *Pièges* et *À ne pas confondre*.
+- [x] Appliquer le nouveau gabarit : encadré d’objectifs, sections *Pièges* et *À ne pas confondre* dans les 30 fiches.
 - [x] Écrire la fiche **SOLID** (promise) : fiche 11 du chapitre 1.
 
 ### P2 : étoffer (≈ 1-2 semaines)
 - [x] Nouvelles fiches au chapitre 1 : types valeur/référence, static & enums, exceptions, génériques, délégués/événements/lambdas (fiches 12 à 16). Le comparatif interface / classe abstraite a été ajouté à la fiche 5.
 - [x] Nouveaux patterns : Template Method, Composite, Prototype, Object Pool (fiches 11 à 14 du chapitre 2).
 - [ ] Patterns suivants : Flyweight, Mediator, Iterator.
-- [ ] **Exercices avec sortie attendue** dans chaque fiche, adaptés de la piscine Java, avec des solutions séparées. *Fait pour les 10 nouvelles fiches (solutions dans des blocs repliables, code compilé et sorties vérifiées) ; reste à faire pour les 20 fiches d’origine.*
+- [x] **Exercices avec sortie attendue** dans chaque fiche, adaptés de la piscine Java : 30 exercices, solutions dans des blocs repliables. Le code publié est extrait automatiquement des fiches, compilé (.NET 8) et sa sortie comparée à la sortie annoncée.
 - [ ] **Projets de fin de chapitre** : Space Arena (ch. 1) et Boulangerie (ch. 2).
 - [ ] Solution .NET + tests xUnit pour tout le code.
 
