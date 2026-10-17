@@ -4,6 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
+using UnityEngine.UIElements;
 
 namespace ArenePatterns.Tests
 {
@@ -117,6 +118,24 @@ namespace ArenePatterns.Tests
 
             yield return new WaitForSeconds(0.2f);
             Assert.Less(joueur.Pv, joueur.PvMax, "Au contact, l’ennemi doit infliger des dégâts.");
+        }
+
+        [UnityTest]
+        public IEnumerator Le_hud_reflete_les_pv_et_le_score()
+        {
+            VisualElement racine = Object.FindAnyObjectByType<Hud>().GetComponent<UIDocument>().rootVisualElement;
+            Label Texte(string nom) => racine.Q<Label>(nom);
+
+            joueur.SubirDegats(75);
+            Assert.AreEqual("25 / 100", Texte("texte-pv").text);
+            Assert.IsTrue(racine.Q("barre-pv-remplissage").ClassListContains("barre__remplissage--critique"),
+                          "Sous 30 % de PV, la barre doit passer en mode critique.");
+
+            Ennemi ennemi = generateur.FaireApparaitre(generateur.CompositionDeLaVague(1).First());
+            yield return new WaitForSeconds(0.8f);                 // fin de l’apparition
+            ennemi.SubirDegats(999);
+
+            Assert.AreEqual(ennemi.Donnees.Points.ToString(), Texte("texte-score").text);
         }
 
         [UnityTest]

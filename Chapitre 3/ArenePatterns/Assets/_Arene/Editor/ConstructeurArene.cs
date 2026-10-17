@@ -2,6 +2,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.UIElements;
 
 namespace ArenePatterns.Editeur
 {
@@ -22,7 +23,7 @@ namespace ArenePatterns.Editeur
             // ce qui invaliderait les références vers des assets chargés avant.
             var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
 
-            foreach (string dossier in new[] { "Materiaux", "Donnees", "Prefabs", "Scenes" })
+            foreach (string dossier in new[] { "Materiaux", "Donnees", "Prefabs", "Scenes", "Interface" })
                 if (!AssetDatabase.IsValidFolder($"{Racine}/{dossier}"))
                     AssetDatabase.CreateFolder(Racine, dossier);
 
@@ -108,7 +109,12 @@ namespace ArenePatterns.Editeur
             var generateur = new GameObject("Générateur de vagues").AddComponent<GenerateurVagues>();
             var partie = new GameObject("Gestionnaire de partie").AddComponent<GestionnairePartie>();
             var entrees = new GameObject("Lecteur d’entrées").AddComponent<LecteurEntrees>();
-            var hud = new GameObject("HUD").AddComponent<Hud>();
+            // L’interface en UI Toolkit : un UIDocument affiche Hud.uxml avec les réglages du PanelSettings
+            var objetHud = new GameObject("HUD");
+            var document = objetHud.AddComponent<UIDocument>();
+            document.panelSettings = CreerPanelSettings();
+            document.visualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>($"{Racine}/Interface/Hud.uxml");
+            var hud = objetHud.AddComponent<Hud>();
 
             // ---------- Injection des dépendances (champs [SerializeField] privés)
             Brancher(composantJoueur, so =>
@@ -193,6 +199,25 @@ namespace ArenePatterns.Editeur
             var so = new SerializedObject(cible);
             configurer(so);
             so.ApplyModifiedPropertiesWithoutUndo();
+        }
+
+        private static PanelSettings CreerPanelSettings()
+        {
+            string chemin = $"{Racine}/Interface/PanneauHud.asset";
+            var reglages = AssetDatabase.LoadAssetAtPath<PanelSettings>(chemin);
+            if (reglages == null)
+            {
+                reglages = ScriptableObject.CreateInstance<PanelSettings>();
+                AssetDatabase.CreateAsset(reglages, chemin);
+            }
+
+            // Le thème fournit la police et les styles par défaut ; sans lui, les textes ne s’affichent pas
+            reglages.themeStyleSheet = AssetDatabase.LoadAssetAtPath<ThemeStyleSheet>($"{Racine}/Interface/ThemeArene.tss");
+            reglages.scaleMode = PanelScaleMode.ScaleWithScreenSize;   // l’interface garde ses proportions
+            reglages.referenceResolution = new Vector2Int(1920, 1080);
+            reglages.match = 0.5f;
+            EditorUtility.SetDirty(reglages);
+            return reglages;
         }
 
         private static Projectile CreerPrefabProjectile(Material materiau)

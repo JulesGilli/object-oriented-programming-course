@@ -127,8 +127,9 @@ Assets/_Arene/
 │   ├── Ennemis/               DonneesEnnemiSO, Ennemi, EtatsEnnemi, FabriqueEnnemis
 │   ├── Partie/                GenerateurVagues, GestionnairePartie
 │   └── Interface/             Hud
-├── Editor/                    ConstructeurArene, CaptureIllustration
-├── Tests/                     TestsArene (tests PlayMode)
+├── Interface/                 Hud.uxml, Hud.uss, ThemeArene.tss, PanneauHud (UI Toolkit)
+├── Editor/                    ConstructeurArene
+├── Tests/                     TestsArene (tests PlayMode), CaptureIllustration
 ├── Donnees/                   assets des modes de tir et des types d’ennemis
 ├── Materiaux/, Prefabs/, Scenes/
 ```

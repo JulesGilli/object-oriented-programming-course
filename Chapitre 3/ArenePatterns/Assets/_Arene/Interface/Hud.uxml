@@ -1,0 +1,37 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="Hud.uss" />
+
+    <!-- picking-mode="Ignore" : l’interface ne capture jamais la souris, qui sert à viser -->
+    <ui:VisualElement name="hud" class="hud" picking-mode="Ignore">
+
+        <!-- En haut à gauche : vie et arme -->
+        <ui:VisualElement class="panneau panneau--gauche" picking-mode="Ignore">
+            <ui:Label text="POINTS DE VIE" class="intitule" picking-mode="Ignore" />
+            <ui:VisualElement name="barre-pv" class="barre" picking-mode="Ignore">
+                <ui:VisualElement name="barre-pv-remplissage" class="barre__remplissage" picking-mode="Ignore" />
+                <ui:Label name="texte-pv" text="100 / 100" class="barre__texte" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:Label name="texte-arme" text="Tir simple" class="arme" picking-mode="Ignore" />
+        </ui:VisualElement>
+
+        <!-- En haut à droite : score et vague -->
+        <ui:VisualElement class="panneau panneau--droite" picking-mode="Ignore">
+            <ui:Label text="SCORE" class="intitule" picking-mode="Ignore" />
+            <ui:Label name="texte-score" text="0" class="score" picking-mode="Ignore" />
+            <ui:Label name="texte-vague" text="Vague 1" class="vague" picking-mode="Ignore" />
+        </ui:VisualElement>
+
+        <!-- Au centre : annonce animée de chaque nouvelle vague -->
+        <ui:Label name="annonce-vague" text="Vague 1" class="annonce" picking-mode="Ignore" />
+
+        <!-- En bas : rappel des commandes -->
+        <ui:Label text="ZQSD  se déplacer   ·   Souris  viser   ·   Clic / Espace  tirer   ·   1 / 2  changer d’arme" class="aide" picking-mode="Ignore" />
+
+        <!-- Écran de fin, affiché en fondu -->
+        <ui:VisualElement name="ecran-fin" class="ecran-fin" picking-mode="Ignore">
+            <ui:Label text="PARTIE TERMINÉE" class="ecran-fin__titre" picking-mode="Ignore" />
+            <ui:Label name="texte-score-final" text="Score : 0" class="ecran-fin__score" picking-mode="Ignore" />
+            <ui:Label text="Appuyez sur R pour rejouer" class="ecran-fin__aide" picking-mode="Ignore" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

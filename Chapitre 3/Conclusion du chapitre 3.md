@@ -9,7 +9,7 @@
 
 ## Tester le jeu
 
-Le projet contient sept tests **PlayMode** : ils chargent la vraie scène, la laissent tourner, et vérifient que chaque pattern fait son travail.
+Le projet contient huit tests **PlayMode** : ils chargent la vraie scène, la laissent tourner, et vérifient que chaque pattern fait son travail.
 
 ```csharp
 using System.Collections;
@@ -18,6 +18,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
+using UnityEngine.UIElements;
 
 namespace ArenePatterns.Tests
 {
@@ -134,6 +135,24 @@ namespace ArenePatterns.Tests
         }
 
         [UnityTest]
+        public IEnumerator Le_hud_reflete_les_pv_et_le_score()
+        {
+            VisualElement racine = Object.FindAnyObjectByType<Hud>().GetComponent<UIDocument>().rootVisualElement;
+            Label Texte(string nom) => racine.Q<Label>(nom);
+
+            joueur.SubirDegats(75);
+            Assert.AreEqual("25 / 100", Texte("texte-pv").text);
+            Assert.IsTrue(racine.Q("barre-pv-remplissage").ClassListContains("barre__remplissage--critique"),
+                          "Sous 30 % de PV, la barre doit passer en mode critique.");
+
+            Ennemi ennemi = generateur.FaireApparaitre(generateur.CompositionDeLaVague(1).First());
+            yield return new WaitForSeconds(0.8f);                 // fin de l’apparition
+            ennemi.SubirDegats(999);
+
+            Assert.AreEqual(ennemi.Donnees.Points.ToString(), Texte("texte-score").text);
+        }
+
+        [UnityTest]
         public IEnumerator La_mort_du_joueur_termine_la_partie_et_R_la_relance()
         {
             int scoreFinal = -1;
@@ -197,7 +216,7 @@ Et, en filigrane, les principes du chapitre 1 : **encapsulation** (PV privés, S
 
 * **Un replay :** enregistrez chaque commande avec l’instant où elle a été exécutée, puis rejouez la liste dans une nouvelle partie. (Attention : il faudra aussi rendre déterministes les positions d’apparition, aujourd’hui tirées au hasard.)
 * **Une IA de démonstration :** un second « lecteur » qui produit des commandes à partir de la position des ennemis, au lieu du clavier.
-* **Une interface en uGUI ou UI Toolkit** qui remplace le HUD IMGUI, sans modifier aucun autre script.
+* **Un menu de pause en UI Toolkit**, avec de vrais boutons : il faudra cette fois laisser leurs éléments capter la souris (`picking-mode="Position"`) et suspendre le jeu pendant qu’il est affiché.
 * **Des Event Channels en ScriptableObject** (fiche [7. Observer](<../Chapitre 2/Partie III — Patterns Comportementaux/7. Observer.md>)) pour que le HUD puisse vivre dans une scène séparée.
 * **Un pool d’ennemis** : seule la `FabriqueEnnemis` et l’état `Mort` changeraient.
 
