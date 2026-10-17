@@ -53,6 +53,14 @@ Les patterns sont classés selon leur rôle dans l’architecture : créationnel
 
 ---
 
+#### Prérequis
+0. **Lire un diagramme UML**
+    - Boîte de classe et visibilités (`+`, `-`, `#`)
+    - Héritage, implémentation, association, agrégation, composition, dépendance
+    - Lecture des diagrammes de séquence et d’états
+
+---
+
 #### Partie I — Patterns Créationnels
 1. **Singleton**
     - Instance unique et accessible globalement

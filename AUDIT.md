@@ -209,9 +209,9 @@ Il faut aussi un dossier `code/` qui contienne une **solution .NET** (un projet 
 
 ### P1 : rendre le cours « clean » (≈ 2-3 jours)
 - [ ] Adopter une convention unique de nommage (code en anglais, texte en français) et des noms de fichiers sans espaces ni accents.
-- [ ] Ajouter la navigation précédent / suivant / sommaire.
-- [ ] **Ajouter un diagramme Mermaid à chaque fiche** (classes, séquence ou états).
-- [ ] Ajouter une fiche « Lire un diagramme UML » avant le chapitre 2.
+- [x] Ajouter la navigation précédent / suivant / sommaire.
+- [x] **Ajouter un diagramme Mermaid à chaque fiche** (classes, séquence ou états).
+- [x] Ajouter une fiche « Lire un diagramme UML » avant le chapitre 2.
 - [ ] Appliquer le nouveau gabarit : sections *Pièges* et *À ne pas confondre*.
 - [ ] Écrire la fiche **SOLID** (promise).
 

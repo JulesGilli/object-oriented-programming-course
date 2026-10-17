@@ -55,6 +55,9 @@ Le cours est divisé en deux grands chapitres :
 
 #### Structure :
 
+#### **Prérequis**
+- **Lire un diagramme UML** — Boîte de classe, visibilités, relations, diagrammes de séquence et d’états  
+
 #### **Partie I — Patterns Créationnels**
 - **Singleton** — Garantir une instance unique (GameManager, AudioManager)  
 - **Factory Method** — Déléguer la création d’objets  

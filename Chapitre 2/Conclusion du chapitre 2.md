@@ -115,3 +115,6 @@ La maîtrise des Design Patterns ouvre la voie vers des concepts architecturaux 
 * [Robert Nystrom — Game Programming Patterns (gratuit en ligne)](https://gameprogrammingpatterns.com/)
 * [Unity — e-book « Level up your code with design patterns and SOLID »](https://unity.com/resources/design-patterns-solid-ebook)
 
+---
+
+[← Précédent : 10. Command](<Partie III — Patterns Comportementaux/10. Command.md>) · [Sommaire](<../README.md>)

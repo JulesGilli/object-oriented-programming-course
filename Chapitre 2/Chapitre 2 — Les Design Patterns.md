@@ -81,6 +81,13 @@ Ces patrons deviennent ainsi des **outils concrets** pour structurer vos jeux et
 
 Nous allons explorer les Design Patterns selon leur famille :
 
+### Avant de commencer
+
+0. [Lire un diagramme UML](<0. Lire un diagramme UML.md>)
+
+> [!TIP]
+> Chaque pattern est illustré par des diagrammes UML (classes, séquence, états). Si vous n’avez jamais lu de diagramme de classes, commencez par cette courte fiche : elle explique les boîtes, les symboles de visibilité et les six types de flèches.
+
 ### Partie I — Patterns Créationnels
 
 1. Singleton
@@ -115,3 +122,7 @@ Chaque pattern sera étudié avec :
 * [Refactoring Guru — Catalogue des Design Patterns](https://refactoring.guru/fr/design-patterns/catalog)
 * [Robert Nystrom — Game Programming Patterns (gratuit en ligne)](https://gameprogrammingpatterns.com/)
 * [Unity — e-book « Level up your code with design patterns and SOLID »](https://unity.com/resources/design-patterns-solid-ebook)
+
+---
+
+[← Précédent : Conclusion du chapitre 1](<../Chapitre 1/Conclusion du chapitre 1.md>) · [Sommaire](<../README.md>) · [Suivant : Lire un diagramme UML →](<0. Lire un diagramme UML.md>)

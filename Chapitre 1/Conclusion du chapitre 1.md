@@ -77,3 +77,7 @@ Avant d’aborder le chapitre suivant, il est recommandé de :
 * [Unity Learn — Junior Programmer Pathway](https://learn.unity.com/pathway/junior-programmer)
 * Booch, Grady. *Object-Oriented Analysis and Design with Applications*, Addison-Wesley, 2007.
 * Martin, Robert C. *Clean Code: A Handbook of Agile Software Craftsmanship*, Prentice Hall, 2008.
+
+---
+
+[← Précédent : 10. Couplage et Cohésion](<Partie III — Concepts Avancés/10. Couplage et Cohésion.md>) · [Sommaire](<../README.md>) · [Suivant : Introduction du chapitre 2 →](<../Chapitre 2/Chapitre 2 — Les Design Patterns.md>)

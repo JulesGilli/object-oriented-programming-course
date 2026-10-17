@@ -109,3 +109,6 @@ Ces principes sont omniprésents en C# et essentiels à la conception d’archit
 * [Microsoft Learn — Programmation orientée objet (C#)](https://learn.microsoft.com/fr-fr/dotnet/csharp/fundamentals/tutorials/oop)
 * Grady Booch, *Object-Oriented Analysis and Design with Applications*, Addison-Wesley, 2007.
 
+---
+
+[Sommaire](<../README.md>) · [Suivant : 1. Classe et Objet →](<Partie I — Les Fondamentaux/1. Classe et Objet.md>)
