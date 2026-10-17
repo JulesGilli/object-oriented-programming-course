@@ -36,6 +36,11 @@ Les notions de **composition**, **visibilité** et **responsabilité** renforcen
 * La **composition** favorise la flexibilité en assemblant des comportements indépendants.
 * La **visibilité** régule l’accès aux données et aux fonctions internes.
 * Le **couplage faible** et la **forte cohésion** assurent un design stable, propre et évolutif.
+* Les principes **SOLID** donnent cinq critères concrets pour juger une conception.
+
+### 5. Les outils du langage
+
+Les types valeur et référence, les membres statiques et les énumérations, les exceptions, les génériques, les délégués et les événements sont les outils du langage qui permettent d’appliquer ces principes au quotidien. Ce sont aussi les briques de base des Design Patterns du chapitre 2 (Observer, Strategy, Object Pool…).
 
 ---
 

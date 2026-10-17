@@ -43,8 +43,16 @@ Le cours est divisé en deux grands chapitres :
    - Composition vs héritage  
    - Visibilité et portée  
    - Couplage et cohésion  
+   - Principes SOLID  
 
-5. **Conclusion**
+5. **Les outils du langage**
+   - Types valeur et types référence  
+   - Membres statiques, énumérations et namespaces  
+   - Exceptions  
+   - Génériques  
+   - Délégués, événements et lambdas  
+
+6. **Conclusion**
    - Résumé des principes  
    - Importance de la POO pour Unity et la conception orientée composants  
 
@@ -70,6 +78,12 @@ Le cours est divisé en deux grands chapitres :
 - **Strategy** — Algorithmes interchangeables (IA, comportements dynamiques)  
 - **State** — Comportement dépendant d’un état interne (joueur, IA, gameplay)  
 - **Command** — Encapsulation d’actions, systèmes Undo/Redo, input modulaires  
+
+#### **Partie IV — Patterns complémentaires**
+- **Template Method** — Fixer l’ordre d’un algorithme et laisser varier ses étapes  
+- **Composite** — Traiter un élément et un groupe d’éléments de la même façon  
+- **Prototype** — Créer des objets en clonant un modèle (`Instantiate`)  
+- **Object Pool** — Recycler des objets coûteux (projectiles, particules)  
 
 #### **Conclusion du Chapitre 2**
 - Synthèse des trois familles de patterns  
