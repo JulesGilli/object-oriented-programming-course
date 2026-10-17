@@ -1,4 +1,4 @@
-﻿# Conclusion du Chapitre 2 — Les Design Patterns
+# Conclusion du Chapitre 2 — Les Design Patterns
 
 ## Synthèse générale
 

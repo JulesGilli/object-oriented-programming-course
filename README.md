@@ -1,117 +1,128 @@
 # Cours complet : Programmation Orientée Objet et Design Patterns en C#
 
-> Un guide structuré et professionnel pour apprendre la **Programmation Orientée Objet (POO)** et les **Design Patterns** en C#, avec un accent particulier sur leur **application dans Unity**.
+> Un guide structuré et progressif pour apprendre la **Programmation Orientée Objet (POO)** et les **Design Patterns** en C#, avec un accent particulier sur leur **application dans Unity**.
 
 ---
 
-## Objectif du projet
+## Objectif
 
-Ce dépôt a pour but d’offrir une **ressource complète et pédagogique** pour comprendre :
-- les **principes fondamentaux** de la Programmation Orientée Objet,  
-- les **Design Patterns classiques (GoF)** et leur logique,  
+Ce dépôt propose une **ressource complète et pédagogique** pour comprendre :
+
+- les **principes fondamentaux** de la Programmation Orientée Objet ;
+- les **Design Patterns classiques (GoF)** et quelques patterns incontournables du jeu vidéo ;
 - leur **mise en œuvre en C# et dans Unity** (architecture de gameplay, modularité, maintenance).
 
-> L’objectif est de fournir un support clair et progressif pour tout développeur souhaitant renforcer sa compréhension de la conception logicielle moderne.
+## Comment suivre ce cours
+
+- **Parcours conseillé :** lire les fiches dans l’ordre. Chaque fiche se termine par des liens *Précédent · Sommaire · Suivant*.
+- **Format d’une fiche :** objectifs, explication, diagramme UML, exemple C#, application dans Unity, pièges courants, confusions fréquentes, exercice avec sortie attendue et solution.
+- **Prérequis :** connaître les bases de la programmation (variables, conditions, boucles, fonctions). Aucune connaissance préalable de la POO n’est nécessaire.
+- **Pour pratiquer :** tous les exemples C# hors Unity se testent dans un projet console (`dotnet new console`).
 
 ---
 
-## Structure du cours
+## Sommaire
 
-Le cours est divisé en deux grands chapitres :
+### [Chapitre 1 — Introduction à la Programmation Orientée Objet](<Chapitre 1/Chapitre 1 — Introduction à la Programmation Orientée Objet.md>)
 
-### **Chapitre 1 — Introduction à la Programmation Orientée Objet (POO)**
-> Comprendre les bases conceptuelles et techniques de la POO, à travers des explications détaillées et des exemples en C#.
+Définition de la POO, contexte historique, problèmes résolus et comparaison avec la programmation procédurale.
 
-#### Contenu :
-1. **Introduction générale**
-   - Définition formelle et contexte historique  
-   - Pourquoi la POO ? Problèmes résolus et avantages  
-   - Comparaison avec la programmation procédurale  
+**Partie I — Les fondamentaux**
 
-2. **Les fondamentaux**
-   - Classe et objet  
-   - Attributs et méthodes  
-   - Constructeurs  
+1. [Classe et objet](<Chapitre 1/Partie I — Les Fondamentaux/1. Classe et Objet.md>) — définition, analogie, instanciation
+2. [Attributs et méthodes](<Chapitre 1/Partie I — Les Fondamentaux/2. Attributs et Méthodes.md>) — membres d’instance et de classe, état et comportement
+3. [Constructeurs](<Chapitre 1/Partie I — Les Fondamentaux/3. Constructeurs.md>) — initialisation, surcharge, chaînage avec `this`
 
-3. **Les quatre piliers de la POO**
-   - Encapsulation  
-   - Abstraction  
-   - Héritage  
-   - Polymorphisme  
+**Partie II — Les quatre piliers de la POO**
 
-4. **Concepts avancés**
-   - Composition vs héritage  
-   - Visibilité et portée  
-   - Couplage et cohésion  
-   - Principes SOLID  
+4. [Encapsulation](<Chapitre 1/Partie II — Les 4 piliers de la POO/4. Encapsulation.md>) — protection de l’état interne, propriétés, validation
+5. [Abstraction](<Chapitre 1/Partie II — Les 4 piliers de la POO/5. Abstraction.md>) — classes abstraites, interfaces, comment choisir
+6. [Héritage](<Chapitre 1/Partie II — Les 4 piliers de la POO/6. Héritage.md>) — classes de base et dérivées, `virtual`/`override`, `new` vs `override`
+7. [Polymorphisme](<Chapitre 1/Partie II — Les 4 piliers de la POO/7. Polymorphisme.md>) — surcharge, redéfinition, liaison dynamique, conversions
 
-5. **Les outils du langage**
-   - Types valeur et types référence  
-   - Membres statiques, énumérations et namespaces  
-   - Exceptions  
-   - Génériques  
-   - Délégués, événements et lambdas  
+**Partie III — Concepts avancés**
 
-6. **Conclusion**
-   - Résumé des principes  
-   - Importance de la POO pour Unity et la conception orientée composants  
+8. [Composition vs héritage](<Chapitre 1/Partie III — Concepts Avancés/8. Composition vs héritage.md>) — « est un » ou « a un »
+9. [Visibilité et portée](<Chapitre 1/Partie III — Concepts Avancés/9. Visibilité et portée.md>) — modificateurs d’accès, portée et durée de vie
+10. [Couplage et cohésion](<Chapitre 1/Partie III — Concepts Avancés/10. Couplage et Cohésion.md>) — responsabilité unique, injection de dépendances
+11. [Principes SOLID](<Chapitre 1/Partie III — Concepts Avancés/11. Principes SOLID.md>) — les cinq principes, du carré-rectangle à l’inversion des dépendances
 
----
+**Partie IV — Les outils du langage**
 
-### **Chapitre 2 — Les Design Patterns**
-> Découvrir, comprendre et appliquer les principaux patrons de conception orientés objet.
+12. [Types valeur et types référence](<Chapitre 1/Partie IV — Les outils du langage/12. Types valeur et types référence.md>) — `class`, `struct`, `record`, copies et égalité
+13. [Membres statiques, énumérations et namespaces](<Chapitre 1/Partie IV — Les outils du langage/13. Membres statiques, énumérations et namespaces.md>)
+14. [Exceptions](<Chapitre 1/Partie IV — Les outils du langage/14. Exceptions.md>) — `throw`, `try`/`catch`, exceptions personnalisées, méthodes `TryXxx`
+15. [Génériques](<Chapitre 1/Partie IV — Les outils du langage/15. Génériques.md>) — classes et méthodes génériques, contraintes `where`, covariance
+16. [Délégués, événements et lambdas](<Chapitre 1/Partie IV — Les outils du langage/16. Délégués, événements et lambdas.md>) — `Action`, `Func`, captures, `event`
 
-#### Structure :
+[Conclusion du chapitre 1](<Chapitre 1/Conclusion du chapitre 1.md>) — récapitulatif et importance de la POO dans Unity
 
-#### **Prérequis**
-- **Lire un diagramme UML** — Boîte de classe, visibilités, relations, diagrammes de séquence et d’états  
+### [Chapitre 2 — Les Design Patterns](<Chapitre 2/Chapitre 2 — Les Design Patterns.md>)
 
-#### **Partie I — Patterns Créationnels**
-- **Singleton** — Garantir une instance unique (GameManager, AudioManager)  
-- **Factory Method** — Déléguer la création d’objets  
-- **Builder** — Construire des objets complexes étape par étape  
+Définition, historique du *Gang of Four* et classification des patterns.
 
-#### **Partie II — Patterns Structurels**
-- **Adapter** — Connecter des interfaces incompatibles  
-- **Decorator** — Ajouter dynamiquement des comportements  
-- **Facade** — Simplifier un système complexe via une interface unique  
+**Avant de commencer**
 
-#### **Partie III — Patterns Comportementaux**
-- **Observer** — Notification et événements (HUD, Gameplay, UI)  
-- **Strategy** — Algorithmes interchangeables (IA, comportements dynamiques)  
-- **State** — Comportement dépendant d’un état interne (joueur, IA, gameplay)  
-- **Command** — Encapsulation d’actions, systèmes Undo/Redo, input modulaires  
+0. [Lire un diagramme UML](<Chapitre 2/0. Lire un diagramme UML.md>) — boîtes de classe, visibilités, relations, diagrammes de séquence et d’états
 
-#### **Partie IV — Patterns complémentaires**
-- **Template Method** — Fixer l’ordre d’un algorithme et laisser varier ses étapes  
-- **Composite** — Traiter un élément et un groupe d’éléments de la même façon  
-- **Prototype** — Créer des objets en clonant un modèle (`Instantiate`)  
-- **Object Pool** — Recycler des objets coûteux (projectiles, particules)  
+**Partie I — Patterns créationnels**
 
-#### **Conclusion du Chapitre 2**
-- Synthèse des trois familles de patterns  
-- Avantages : découplage, flexibilité, modularité  
-- Application directe dans Unity et projets C#  
+1. [Singleton](<Chapitre 2/Partie I — Patterns Créationnels/1. Singleton.md>) — une instance unique (GameManager, AudioManager), et ses risques
+2. [Factory Method](<Chapitre 2/Partie I — Patterns Créationnels/2. Factory Method.md>) — déléguer la création d’objets aux sous-classes
+3. [Builder](<Chapitre 2/Partie I — Patterns Créationnels/3. Builder.md>) — construire des objets complexes étape par étape
+
+**Partie II — Patterns structurels**
+
+4. [Adapter](<Chapitre 2/Partie II — Patterns Structurels/4. Adapter.md>) — connecter des interfaces incompatibles
+5. [Decorator](<Chapitre 2/Partie II — Patterns Structurels/5. Decorator.md>) — ajouter dynamiquement des comportements
+6. [Facade](<Chapitre 2/Partie II — Patterns Structurels/6. Facade.md>) — simplifier l’accès à un système complexe
+
+**Partie III — Patterns comportementaux**
+
+7. [Observer](<Chapitre 2/Partie III — Patterns Comportementaux/7. Observer.md>) — notifications et événements (HUD, gameplay, UI)
+8. [Strategy](<Chapitre 2/Partie III — Patterns Comportementaux/8. Strategy.md>) — algorithmes interchangeables (IA, armes)
+9. [State](<Chapitre 2/Partie III — Patterns Comportementaux/9. State.md>) — comportement qui dépend d’un état interne
+10. [Command](<Chapitre 2/Partie III — Patterns Comportementaux/10. Command.md>) — actions encapsulées, Undo/Redo, input
+
+**Partie IV — Patterns complémentaires**
+
+11. [Template Method](<Chapitre 2/Partie IV — Patterns complémentaires/11. Template Method.md>) — fixer l’ordre d’un algorithme, laisser varier ses étapes
+12. [Composite](<Chapitre 2/Partie IV — Patterns complémentaires/12. Composite.md>) — traiter un élément et un groupe de la même façon
+13. [Prototype](<Chapitre 2/Partie IV — Patterns complémentaires/13. Prototype.md>) — créer des objets en clonant un modèle (`Instantiate`)
+14. [Object Pool](<Chapitre 2/Partie IV — Patterns complémentaires/14. Object Pool.md>) — recycler des objets coûteux (projectiles, particules)
+
+[Conclusion du chapitre 2](<Chapitre 2/Conclusion du chapitre 2.md>) — synthèse des familles de patterns et application dans Unity
+
+### Chapitre 3 — Mise en pratique *(à venir)*
+
+Un mini-projet Unity complet qui combine plusieurs patterns étudiés : State pour l’IA, Observer pour le HUD, Command pour les entrées, Object Pool pour les projectiles, Strategy pour les armes, Factory pour l’apparition des ennemis.
 
 ---
 
 ## Concepts clés abordés
 
-- Programmation Orientée Objet (classes, objets, héritage, polymorphisme)  
-- Principes SOLID et responsabilité unique  
-- Patterns de conception (GoF)  
-- Application concrète dans Unity  
-- Structuration et modularisation d’architectures logicielles  
+- Programmation orientée objet : classes, objets, encapsulation, abstraction, héritage, polymorphisme
+- Principes de conception : couplage et cohésion, composition, principes SOLID
+- Outils du langage C# : types valeur et référence, génériques, exceptions, délégués et événements
+- Design Patterns du *Gang of Four*, et patterns propres au jeu vidéo (Object Pool)
+- Application concrète dans Unity : composants, ScriptableObjects, cycle de vie, Inspector
+
+## Technologies
+
+| Domaine | Technologie |
+| --- | --- |
+| Langage | C# |
+| Framework | .NET / Unity |
+| IDE recommandé | Visual Studio, Rider ou VS Code |
+| Format | Markdown (diagrammes Mermaid, affichés nativement par GitHub) |
 
 ---
 
-## Technologies utilisées
+## Références globales
 
-| Domaine | Technologie |
-|----------|-------------|
-| Langage | C# |
-| Framework | .NET / Unity |
-| IDE recommandé | Visual Studio, Rider, ou VS Code |
-| Format | Markdown (.md) |
-| Objectif | Cours pédagogique et démonstratif |
-
+- Gamma, Helm, Johnson, Vlissides — *Design Patterns: Elements of Reusable Object-Oriented Software*, Addison-Wesley, 1994.
+- Freeman, Eric & Robson, Elisabeth — *Head First Design Patterns*, O’Reilly, 2021.
+- Martin, Robert C. — *Clean Architecture*, Prentice Hall, 2017.
+- [Refactoring Guru — Catalogue complet des Design Patterns](https://refactoring.guru/fr/design-patterns/catalog)
+- [Robert Nystrom — Game Programming Patterns (gratuit en ligne)](https://gameprogrammingpatterns.com/)
+- [Unity — e-book « Level up your code with design patterns and SOLID »](https://unity.com/resources/design-patterns-solid-ebook)

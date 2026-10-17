@@ -1,4 +1,4 @@
-﻿# Chapitre 2 — Les Design Patterns (Patrons de conception)
+# Chapitre 2 — Les Design Patterns (Patrons de conception)
 
 ## Objectif du chapitre
 

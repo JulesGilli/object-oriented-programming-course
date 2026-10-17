@@ -1,4 +1,4 @@
-﻿# Conclusion du Chapitre 1 — Introduction à la POO
+# Conclusion du Chapitre 1 — Introduction à la POO
 
 ## Synthèse générale
 

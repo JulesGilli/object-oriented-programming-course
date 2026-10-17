@@ -23,10 +23,10 @@
 ## 2. Problèmes transverses
 
 ### 2.1 Forme et organisation
-- **Deux sommaires redondants** : [README.md](README.md) et [Cours de Programmation Orientée Objet et Design Patterns en C#.md](<Cours de Programmation Orientée Objet et Design Patterns en C%23.md>) disent la même chose. Il faut en garder un seul.
+- **Deux sommaires redondants** : le README et le fichier « Cours de Programmation Orientée Objet et Design Patterns en C#.md » disaient la même chose. *(Corrigé : ils sont fusionnés dans le [README](README.md), désormais seul sommaire, entièrement cliquable.)*
 - **Aucune navigation** : il n'y a pas de liens entre les fiches (précédent / suivant / sommaire), et le README ne pointe vers aucun fichier.
 - **Noms de fichiers peu pratiques** : ils contiennent des espaces, des tirets cadratins (—) et des accents, ce qui rend les URL GitHub illisibles. De plus, le tri alphabétique place `10. Couplage` avant `8. Composition`. Il faudrait passer au format `01-classe-et-objet.md`.
-- **BOM UTF-8 (`﻿`) au début de 23 fichiers sur 26**. C'est invisible dans l'éditeur, mais ça peut casser le rendu du premier titre et certains outils.
+- **BOM UTF-8 au début de 23 fichiers sur 26** *(corrigé)*. C'est invisible dans l'éditeur, mais ça peut casser le rendu du premier titre et certains outils.
 - **Mélange français/anglais dans le code** : les exemples C# sont en français (`Joueur`, `PrendreDegats`), les exemples Unity en anglais (`Player`, `TakeDamage`). Certains identifiants sont accentués (`Démarrer()` dans [6. Héritage.md](<Chapitre 1/Partie II — Les 4 piliers de la POO/6. Héritage.md>)). C'est légal en C#, mais c'est une mauvaise pratique. Il faut choisir une convention et s'y tenir (je recommande le code en anglais et les explications en français).
 - **Gabarit trop rigide et redondant** : dans chaque pattern, *Avantages*, *Quand utiliser* et *Résumé* répètent les mêmes idées trois fois. Dans le même temps, il manque presque partout les sections qui font progresser : **pièges courants**, **patterns voisins / confusions fréquentes** et **exercice**.
 - **Exemples Unity souvent recopiés de l'exemple C#** : c'est le même code traduit en anglais (Adapter, Decorator, State). L'exemple Unity devrait apporter quelque chose de spécifique : ScriptableObject, prefab, cycle de vie, Inspector.
@@ -205,7 +205,7 @@ Il faut aussi un dossier `code/` qui contienne une **solution .NET** (un projet 
 ### P0 : corriger (≈ ½ journée)
 - [x] Corriger les 32 points de la section 3.
 - [x] Remplacer les 16 liens morts et les 4 liens hors sujet (les 58 liens du cours répondent en 200).
-- [ ] Retirer les BOM, fusionner les deux sommaires et aligner le README sur le contenu réel.
+- [x] Retirer les BOM, fusionner les deux sommaires et aligner le README sur le contenu réel.
 
 ### P1 : rendre le cours « clean » (≈ 2-3 jours)
 - [ ] Adopter une convention unique de nommage (code en anglais, texte en français) et des noms de fichiers sans espaces ni accents.
